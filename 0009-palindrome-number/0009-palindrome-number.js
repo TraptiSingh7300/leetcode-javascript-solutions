@@ -11,7 +11,7 @@ var isPalindrome = function(x) {
     while(newNum !== 0){
         r = newNum % 10;
         sum = sum*10 + r;
-        newNum = Math.trunc(newNum / 10);
+        newNum = Math.floor(newNum / 10);
     }
     return (x === sum);
 };
